@@ -77,8 +77,8 @@ const DesignFlowContent = () => {
         <div>
           <span><h3>See more of my works below</h3></span>
           <div>
-            <img src='images/UI.png' alt='product' />
-            <img src='images/UI2.png' alt='product-1' />
+            <img src='/images/UI.png' alt='product' />
+            <img src='/images/UI2.png' alt='product-1' />
 
           </div>
         </div>
