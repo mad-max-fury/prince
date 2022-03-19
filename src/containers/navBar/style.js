@@ -74,7 +74,7 @@ export const NavItems = styled.ul`
   height:0vh;
   width:0;
   top:0vh;
-  overflow:clip;
+  overflow:hidden;
   left:0%;
   opacity:0;
   z-index:100 !important;
