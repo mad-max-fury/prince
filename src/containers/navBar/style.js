@@ -128,10 +128,11 @@ export const Hamburger = styled.div`
 `
 export const Close = styled.div`
 ${({ active }) => active ? `
- display:block;
+ display:flex;
  font-size:30px;
  font-weight:500;
  z-index:500;
+ align-self:flex-end;
  
 `: `
 display:none;
