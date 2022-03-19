@@ -215,7 +215,7 @@ const AccordionContent = styled.div`
       : `
     transition:all 0.4s cube-bezier(0,1,0,1);
     max-height:0;
-    overflow:clip;
+    overflow:hidden;
 `}
 `;
 const MiniCardWrapper = styled.div`
