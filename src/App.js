@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import AboutPage from "./pages/aboutPage";
+import LandingPage from "./pages/landingpage";
+import { Routes, Route } from "react-router-dom";
+
+import DesignFlowContent from "./components/designFlowContent";
+import TopNavBar from "./containers/navBar";
+import Footer from "./containers/footer";
+import Resume from "./containers/resume";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{ backgroundImage: `url('images/heroBg.svg')` }}>
+
+      </div>
+      <div className='blurBg'></div>
+
+      <TopNavBar />
+      <Routes>
+        <Route path="/" exact element={<LandingPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/useCase/:id" element={<DesignFlowContent />} />
+        <Route path="/resume" element={<Resume />} />
+
+      </Routes>
+      <Footer />
     </div>
   );
 }
