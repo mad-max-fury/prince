@@ -1,23 +1,22 @@
-import React from 'react'
-import AboutPage from '../../containers/About'
-import ContactMe from '../../containers/contactme'
-import Footer from '../../containers/footer'
-import Hero from '../../containers/hero'
-import TopNavBar from '../../containers/navBar'
-import ProductSection from '../../containers/productslider'
-
-import { LandingPageWrapper } from './style'
+import React from "react";
+import ContactMe from "../../containers/contactme";
+import Hero from "../../containers/hero";
+import ProductSection from "../../containers/productslider";
+import Fade from "react-reveal/Fade";
+import { LandingPageWrapper } from "./style";
 
 const LandingPage = () => {
   return (
     <>
-      <LandingPageWrapper >
-        <Hero />
-      </LandingPageWrapper>
+      <Fade bottom>
+        <LandingPageWrapper>
+          <Hero />
+        </LandingPageWrapper>
+      </Fade>
       <ProductSection />
       <ContactMe />
     </>
-  )
-}
+  );
+};
 
-export default LandingPage
+export default LandingPage;
