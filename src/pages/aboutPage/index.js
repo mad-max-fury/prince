@@ -7,11 +7,9 @@ import { AboutPageWrapper } from "./style";
 
 const AboutPage = () => {
   return (
-    <Fade right>
-      <AboutPageWrapper style={{ height: "80vh" }}>
-        <About />
-      </AboutPageWrapper>
-    </Fade>
+    <AboutPageWrapper style={{ height: "80vh" }}>
+      <About />
+    </AboutPageWrapper>
   );
 };
 

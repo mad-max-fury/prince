@@ -10,6 +10,8 @@ const LandingPage = () => {
     <>
       <Fade bottom>
         <LandingPageWrapper>
+          <div style={{ backgroundImage: `url('images/heroBg.svg')` }}></div>
+          <div className="blurBg"></div>
           <Hero />
         </LandingPageWrapper>
       </Fade>

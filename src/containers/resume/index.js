@@ -5,11 +5,9 @@ import ResumeContainer from "../../components/resumeContainer";
 
 const Resume = () => {
   return (
-    <Fade left>
-      <ResumePageWrapper>
-        <ResumeContainer />
-      </ResumePageWrapper>
-    </Fade>
+    <ResumePageWrapper>
+      <ResumeContainer />
+    </ResumePageWrapper>
   );
 };
 
